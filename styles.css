@@ -150,3 +150,23 @@ section {
 .cta-button:hover {
     background: #003d36;
 }
+
+.cartoon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url('path-to-your-cartoon-image.png') no-repeat;
+    animation: moveCartoon 5s linear;
+}
+
+@keyframes moveCartoon {
+    0% {
+        left: -100px; /* Start off the screen */
+    }
+    50% {
+        left: 50%; /* Move to the middle of the screen */
+    }
+    100% {
+        left: 100%; /* Move off the screen */
+    }
+}
