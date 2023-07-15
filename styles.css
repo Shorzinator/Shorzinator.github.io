@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    /* Other styles remain the same */
+    padding: 20px; /* Added padding */
+}
+
+#navbar {
+    position: sticky; /* Changed from fixed to sticky */
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+/* Other CSS rules remain the same */
+
+.hero {
+    background: url('https://example.com/path/to/your/image.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #004d40; /* Dark green color for text */
+    width: 100%;
+}
+
+.hero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+    animation: fadeIn 2s ease-in; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 77, 64, 0.4); /* Semi-transparent dark green overlay */
+}
+
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Added margin */
+}
+
+.social-links a:hover {
+    color: #007bff;
+    transition: color 0.3s ease; /* Added transition */
+}
