@@ -21,15 +21,37 @@ section {
 }
 
 #navbar {
-    position: sticky; /* Changed from fixed to sticky */
+    position: sticky;
     top: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #004d40; /* Dark green background */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 10;
+    padding: 10px 0; /* Added vertical padding */
 }
 
-/* Other CSS rules remain the same */
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the list items */
+}
+
+#navbar ul li {
+    margin: 0 20px; /* Added horizontal margin */
+}
+
+#navbar ul li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1.2em; /* Larger text */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+#navbar ul li a:hover {
+    color: #ddd; /* Lighter text on hover */
+}
 
 .hero {
     background: url('https://example.com/path/to/your/image.jpg') no-repeat center center fixed;
