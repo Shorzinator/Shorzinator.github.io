@@ -155,7 +155,7 @@ section {
     position: absolute;
     width: 100px;
     height: 100px;
-    background: url('path-to-your-cartoon-image.png') no-repeat;
+    background: url('images/animated-cartoon.png') no-repeat;
     animation: moveCartoon 5s linear;
 }
 
