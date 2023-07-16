@@ -153,11 +153,13 @@ section {
 
 .cartoon {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
     background: url('images/animated-cartoon.png') no-repeat;
     animation: moveCartoon 5s linear;
+    border: 1px solid red; /* Added border */
 }
+
 
 @keyframes moveCartoon {
     0% {
